@@ -2,6 +2,8 @@ const Input = require('./lib/Input.js');
 const Creator = require('./lib/Creator.js')
 const Output = require('./lib/Output.js');
 
+const creator = new Creator();
+
 function main() {
     // console.log(Input);
     // console.log(new Input());
@@ -16,7 +18,7 @@ function main() {
             // throw new Error("error...testing...error");
             // return 'test';
 
-            const file = Creator.createSVG(data, );
+            const file = creator.createSVG(data, );
 
             Output.writeOut(file, '.svg', 'svg_file')
                 .then((result) => {
