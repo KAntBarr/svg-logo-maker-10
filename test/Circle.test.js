@@ -8,6 +8,8 @@ describe('Circle', () => {
 
             expect(circle).toBeInstanceOf(Circle);
         });
+
+        it();
     });
 
 
