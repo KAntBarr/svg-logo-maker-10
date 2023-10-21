@@ -10,5 +10,13 @@ describe('Input', () => {
         });
     });
 
+    describe('Collect Input', () => {
+        it('a promise should be returned when calling begin on an Input object', () => {
+            const result = (new Input()).begin();
+
+            expect(result).toBeInstanceOf(Promise);
+        });
+    })
+
 
 });

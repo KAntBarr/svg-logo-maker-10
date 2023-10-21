@@ -10,5 +10,13 @@ describe('Output', () => {
         });
     });
 
+    describe('Write To File', () => {
+        it('calling writeOut on the Output class should return a promise', () => {
+            const output = Output.writeOut(1, 1, 1);
+
+            expect(output).toBeInstanceOf(Promise);
+        })
+    })
+
 
 });
