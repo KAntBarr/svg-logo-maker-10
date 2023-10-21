@@ -9,7 +9,6 @@ describe('Creator', () => {
             expect(creator).toBeInstanceOf(Creator);
         });
 
-        it();
     });
 
 
