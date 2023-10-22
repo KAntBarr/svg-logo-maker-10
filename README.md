@@ -22,6 +22,7 @@ Simply go into the folder that contains the index.js file, run node . or node in
 
 ## Credits
 Inquirer v8.2.4 - https://www.npmjs.com/package/inquirer
+Jest v24.9.0 - https://jestjs.io
 
 ## License
 Licensed under the MIT license.
@@ -33,7 +34,21 @@ N/A
 Pick an open issue to solve, fork the respository, fix the issue with the forked repository, then do a pull request with the original repository. Or donate to our cause.
 
 ## Tests
-N/A
+Input:
+- tested the creation of the an Input object
+- tested the output of calling begin() on an Input object
+
+Output:
+- tested the creation of the an Output object
+- tested the output of calling writeOut() on the Output class
+
+Creator:
+- tested the creation of thean Creator object
+- tested the output of createSVG() from a Creator object against the render() output of all of Shape's children classes
+
+Shape(s):
+- tested the creation of the shape object and its children objects
+- tested the ouptut of calling render() on the shape class and its children classes
 
 ## Questions
 Github Username: KAntBarr - https://github.com/KAntBarr
