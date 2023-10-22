@@ -18,9 +18,14 @@ function main() {
             // throw new Error("error...testing...error");
             // return 'test';
 
+            const {shape, text, color} = data;
+
             const file = creator.createSVG(data, );
 
-            Output.writeOut(file, '.svg', 'svg_file')
+            const fileName = `${shape}_${color}-${text}`.toLowerCase();
+
+
+            Output.writeOut(file, '.svg', fileName)
                 .then((result) => {
                     console.log(result);
                 })
